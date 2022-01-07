@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .Floorplan{
+    display: grid;
+    grid-template-areas: 
+      "Bath1       BedRoom1   BedRoom1  Kitchen"
+      "Bath1       BedRoom1   BedRoom1  Kitchen"
+      "LivingRoom LivingRoom LivingRoom Kitchen"
+      "LivingRoom LivingRoom LivingRoom Kitchen"
+      "BedRoom2   BedRoom2   BedRoom2   Bath2"
+      "BedRoom2   BedRoom2   BedRoom2   Bath2"
+      "BedRoom2   BedRoom2   BedRoom2   Bath2"
+      "BedRoom3   BedRoom3   BedRoom3   BedRoom3"
+      "BedRoom3   BedRoom3   BedRoom3   BedRoom3"
+      "BedRoom3   BedRoom3   BedRoom3   BedRoom3"
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    ;
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Bath1{
+    grid-area: Bath1;
+  background-color: blue;
+  border: solid;
   }
-  to {
-    transform: rotate(360deg);
+  .Bath2{
+    grid-area: Bath2;
+    background-color:blue;
+    border: solid;
   }
+  .Kitchen{
+    grid-area: Kitchen;
+    background-color: coral;
+    border: solid;
+
+  }
+  .LivingRoom{
+    grid-area: LivingRoom;
+    background-color: crimson;
+    border: solid;
+  }
+.BedRoom1{
+    grid-area: BedRoom1;
+    background-color: darkgreen;
+    border: solid;
+  }
+
+.BedRoom2{
+  grid-area: BedRoom2;
+  background-color: darkgreen;
+  border: solid;
+}
+.BedRoom3{
+  grid-area: BedRoom3;
+  background-color: darkgreen;
+  border: solid;
+}
+.appliance{
+  border: dashed;
 }
